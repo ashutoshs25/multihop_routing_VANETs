@@ -26,7 +26,7 @@ Then run:
 sbatch --array=1-100 submit.sbatch
 ```
 
-This command runs 100 simulations in parallel. 
+This command runs 100 simulations in parallel. It should take 10-15 minutes to run once you get the HPC resources. The sim_time parameter can be adjusted (default is 100 seconds). You can also run a single simulation on your local desktop/PC. 
 
 Data will be collected and stored in a folder named data. Transfer this data back to your laptop using SCP and then plot the relevant metrics using 'data_process.m'
 
