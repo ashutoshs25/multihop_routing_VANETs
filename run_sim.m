@@ -1,10 +1,6 @@
-function run_sim(aID)
-
-aID = num2str(aID);
-
 
 % Use this with a random aID when running 1 simulation on local PC
-%aID = '4';
+aID = '4';
 
 
 
@@ -199,7 +195,7 @@ if ~exist(savefolder, 'dir')
        mkdir(savefolder)
 end
 save(strcat('data/latency/','output_latency','_',num2str(aID),'.mat'),'latency_results');
-end
+
 
 
 
